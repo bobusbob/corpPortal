@@ -6,7 +6,7 @@
 
 Адрес сайта: https://bobusbob.github.io/corpPortal/
 
-При отправке ветки `main` на GitHub Actions собирает проект и публикует папку `dist` на GitHub Pages. Отдельный хостинг для этого не нужен. Публичный ключ Supabase для сборки лежит в `.env.production`.
+При отправке ветки `main` GitHub Actions собирает проект и публикует папку `dist`. Источник Pages — этот workflow, а не файлы ветки как есть. Отдельный хостинг для этого не нужен. Публичный ключ Supabase для сборки лежит в `.env.production`.
 
 ## Запуск
 
