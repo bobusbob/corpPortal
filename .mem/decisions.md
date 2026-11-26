@@ -60,7 +60,19 @@
 
 ---
 
-## 6. HashRouter и относительный base
+## 6. Публикация через GitHub Actions
+
+**Date:** 2026-11-26
+
+**Decision:** Сайт собирается в `dist` и публикуется на GitHub Pages адресом `https://bobusbob.github.io/corpPortal/`. Публичный ключ Supabase берётся из `.env.production` на этапе сборки.
+
+**Rationale:** GitHub Pages не выполняет Vite и TypeScript. Нужна готовая статика. Отдельный хостинг пока не нужен.
+
+**Alternatives:** Выкладывать корень репозитория. Так браузер получает исходный `index.html` и пустую страницу.
+
+---
+
+## 7. HashRouter и относительный base
 
 **Date:** 2026-11-26
 
